@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: resonant-ai-public-pilot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements-render.txt
+    startCommand: uvicorn app.public_main:app --host 0.0.0.0 --port $PORT --workers 1
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.11
+      - key: PILOT_REQUESTS_PER_MINUTE
+        value: "30"

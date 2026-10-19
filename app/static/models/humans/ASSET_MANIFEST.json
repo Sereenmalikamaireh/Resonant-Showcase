@@ -1,0 +1,24 @@
+{
+  "release": "9.4.1",
+  "characters": {
+    "xbot": {
+      "label": "Feminine mannequin · Xbot",
+      "path": "/static/models/humans/xbot.glb",
+      "sha256": "002f8d269de68e5dce3d25195caf390d1aa359bbfaae3fcf4c8dc78ec36c3ba5",
+      "embedded_clips": ["agree", "headShake", "idle", "run", "sad_pose", "sneak_pose", "walk"],
+      "state_locomotion_clip": "walk"
+    },
+    "ybot": {
+      "label": "Masculine mannequin · Y Bot",
+      "path": "/static/models/humans/ybot.glb",
+      "sha256": "900b231fba96db92a4f6c0cd36e7ea2303fa11acf17cb8fe22b2a5c519fee421",
+      "embedded_clips": ["Dance", "Idle", "Strut"],
+      "state_locomotion_clip": "Strut"
+    }
+  },
+  "default_character": "xbot",
+  "switching": {
+    "preserves": ["motion state", "mode", "camera view", "wireframe visibility", "route context"],
+    "offline": true
+  }
+}
